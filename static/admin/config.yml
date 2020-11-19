@@ -1,5 +1,5 @@
 backend:
-  name: dutch-cookbook-data
+  name: github
   repo: jo2/dutch-cookbook-data
 
 media_folder: static/assets

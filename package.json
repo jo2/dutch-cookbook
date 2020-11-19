@@ -1,15 +1,18 @@
 {
-  "name": "dutch-cookbook",
-  "description": "Cookbook for recipes made in the dutch oven",
+  "name": "dutch-kochbuch",
+  "description": "Ein Kochbuch für Rezepte aus dem Dutch Oven.",
   "version": "0.1.0",
   "author": "jo2",
   "dependencies": {
+    "bootstrap": "4.3.1",
     "gatsby": "^2.23.3",
     "gatsby-image": "^2.4.7",
     "gatsby-plugin-manifest": "^2.4.11",
+    "gatsby-plugin-netlify-cms": "^4.3.7",
     "gatsby-plugin-sass": "^2.2.4",
     "gatsby-source-filesystem": "^2.3.11",
-    "bootstrap": "4.3.1",
+    "netlify-cms-app": "^2.12.15",
+    "node-sass": "^4.13.1",
     "react-bootstrap": "^1.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

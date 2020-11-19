@@ -1,0 +1,16 @@
+backend:
+  name: dutch-cookbook
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: recipes
+    label: Recpies
+    folder: recipes
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { name: author, label: Auhtor }

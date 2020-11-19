@@ -18,10 +18,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        manualInit: true,
-      },
+      resolve: `gatsby-plugin-netlify-cms`
     }
   ]
 }

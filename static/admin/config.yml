@@ -1,5 +1,6 @@
 backend:
-  name: dutch-cookbook
+  name: dutch-cookbook-data
+  repo: jo2/dutch-cookbook-data
 
 media_folder: static/assets
 public_folder: /assets
@@ -8,6 +9,16 @@ collections:
   - name: recipes
     label: Recpies
     folder: recipes
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { name: author, label: Auhtor }
+      - { name: spice, label: Spice}
+  - name: spices
+    label: Spices
+    folder: spices
     create: true
     fields:
       - { name: path, label: Path }

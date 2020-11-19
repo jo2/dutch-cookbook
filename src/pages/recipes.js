@@ -5,7 +5,6 @@ import '../styles/recipes.scss';
 import data from '../data/data.json';
 import RecipeCard from "../components/recipe-card/RecipeCard";
 
-
 const ListPage = () => {
     return (<Layout>
         <Container>

@@ -17,8 +17,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-plugin-netlify-cms`
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/recipes`,
+      },
     }
   ]
 }

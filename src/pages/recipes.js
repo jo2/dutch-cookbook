@@ -5,7 +5,7 @@ import '../styles/recipes.scss';
 import data from '../data/data.json';
 import RecipeCard from "../components/recipe-card/RecipeCard";
 
-const ListPage = () => {
+const RecipesPage = () => {
     return (<Layout>
         <Container>
             <h2>Rezepte</h2>
@@ -16,4 +16,4 @@ const ListPage = () => {
     </Layout>);
 };
 
-export default ListPage;
+export default RecipesPage;

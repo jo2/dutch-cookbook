@@ -15,7 +15,8 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: author, label: Auhtor }
-      - { name: spice, label: Spice}
+      - { name: spice, label: Spice }
+      - { name: slug, label: Slug }
   - name: spices
     label: Spices
     folder: spices
@@ -25,3 +26,4 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: author, label: Auhtor }
+      - { name: slug, label: Slug }

@@ -1,7 +1,7 @@
 ---
 title: Schichtfleisch-Lasagne
 image: /assets/schichfleisch-lasagne.jpg
-spice: Test
+spice: Schichtfleisch-Lasagne
 author: Nils Hölscher
 ingredients:
   - Ca. 3 kg Nacken (Schwein)

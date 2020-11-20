@@ -1,29 +1,33 @@
 backend:
   name: github
-  repo: jo2/dutch-cookbook-data
+  repo: jo2/dutch-cookbook
 
 media_folder: static/assets
 public_folder: /assets
 
 collections:
   - name: recipes
-    label: Recpies
-    folder: recipes
+    label: Recipes
+    folder: "_data/recipes"
     create: true
+    slug: "{{slug}}"
     fields:
-      - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - { name: author, label: Auhtor }
-      - { name: spice, label: Spice }
-      - { name: slug, label: Slug }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "spice", label: "Spice", widget: "string" }
+      - { name: "author", label: "Author", widget: "string" }
+      - { name: "ingredients", label: "Ingredients", widget: "list" }
+      - { name: "slug", label: "Slug", widget: "string", summary: '{{fields.image}}', field:
+          { label: "Ingredient", name: "ingredient", widget: "string" }
+        }
   - name: spices
     label: Spices
-    folder: spices
+    folder: "_data/spices"
     create: true
+    slug: "{{slug}}"
     fields:
-      - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - { name: author, label: Auhtor }
-      - { name: slug, label: Slug }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "ingredients", label: "Ingredients", widget: "list" }
+      - { name: "author", label: "Author", widget: "string" }
+      - { name: "slug", label: "Slug", widget: "string" }

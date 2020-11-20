@@ -4,7 +4,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const recipeTemplate = require.resolve(`./src/templates/recipe.js`)
     const result = await graphql(`
     {
-      allMarkdownRemark() {
+      allMarkdownRemark {
         edges {
           node {
             frontmatter {
@@ -22,10 +22,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
-            slug: node.frontmatter.slug,
+            path: node.frontmatter.slug,
             component: recipeTemplate,
             context: {
-                // additional data can be passed via context
                 slug: node.frontmatter.slug,
             },
         })

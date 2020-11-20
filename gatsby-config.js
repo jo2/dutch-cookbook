@@ -8,23 +8,24 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`
+        name: `Dutch-Cookbook`,
+        short_name: `Dutch-Cookbook`,
+        start_url: `/`,
+        display: `standalone`,
+        icon: './src/images/favicon.png'
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `recipes`,
+        path: `${__dirname}/_data/recipes`,
       },
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/recipes`,
-      },
-    }
+    `gatsby-transformer-remark`
   ]
 }

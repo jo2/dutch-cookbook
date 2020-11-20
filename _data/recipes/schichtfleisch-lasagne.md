@@ -4,23 +4,17 @@ image: /assets/schichfleisch-lasagne.jpg
 spice: Test
 author: Nils Hölscher
 ingredients:
-  - Test
+  - Ca. 3 kg Nacken (Schwein)
+  - 500 g Bacon (Streifen)
+  - 500 g Zwiebeln
+  - 500 g Tomaten
+  - 500 g Staudenselerie
+  - 500 g Möhren
+  - 700 g Lasagneplatten
+  - Min.2 Kisten Bier
 slug: recipes/schichtfleisch-lasagne
 ---
 <!--StartFragment-->
-
-**Zutaten:**
-
-* Ca. 3 kg Nacken (Schwein).
-* 500 g Bacon (Streifen).
-* 500 g Zwiebeln.
-* 500 g Tomaten.
-* 500 g Staudensellerie.
-* 500 g Möhren.
-* 700 g Lasagneplatten.
-* 500 g geriebener Käse.
-* [Schichtfleisch Mischung](https://docs.google.com/document/d/1FMq3z7jEX6Sf7hypKET90B2d7f2i0Wr5BPKqmf_sNOY/edit#heading=h.ays6x128c9or).
-* Min. 2 Kisten Bier
 
 **Vorbereitung:**
 

@@ -2,7 +2,7 @@ backend:
   name: github
   repo: jo2/dutch-cookbook
 
-media_folder: static/assets
+media_folder: _data/assets
 public_folder: /assets
 
 collections:
@@ -17,7 +17,7 @@ collections:
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "spice", label: "Spice", widget: "string" }
       - { name: "author", label: "Author", widget: "string" }
-      - { name: "ingredients", label: "Ingredients", widget: "list", summary: '{{fields.image}}', field:
+      - { name: "ingredients", label: "Ingredients", widget: "list", summary: '{{fields.ingredient}}', field:
           { label: "Ingredient", name: "ingredient", widget: "string" }
         }
       - { name: "slug", label: "Slug", widget: "string" }

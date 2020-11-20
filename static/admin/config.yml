@@ -17,10 +17,10 @@ collections:
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "spice", label: "Spice", widget: "string" }
       - { name: "author", label: "Author", widget: "string" }
-      - { name: "ingredients", label: "Ingredients", widget: "list" }
-      - { name: "slug", label: "Slug", widget: "string", summary: '{{fields.image}}', field:
+      - { name: "ingredients", label: "Ingredients", widget: "list", summary: '{{fields.image}}', field:
           { label: "Ingredient", name: "ingredient", widget: "string" }
         }
+      - { name: "slug", label: "Slug", widget: "string" }
   - name: spices
     label: Spices
     folder: "_data/spices"

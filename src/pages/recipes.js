@@ -9,8 +9,9 @@ const RecipesPage = ({data}) => {
     return (<Layout>
         <Container>
             <h2>Rezepte</h2>
-            <div className="list__recipe-list">
-                {data.allMarkdownRemark.edges.map(recipe => <RecipeCard props={recipe.node.frontmatter}/>)}
+            <div className="row row-cols-3">
+                {data.allMarkdownRemark.edges.filter(node => node.node.frontmatter.slug && node.node.frontmatter.slug.includes('/recipes/'))
+                    .map(recipe => <RecipeCard props={recipe.node.frontmatter}/>)}
             </div>
         </Container>
     </Layout>);
@@ -22,13 +23,10 @@ export const data = graphql`
       edges {
         node {
           frontmatter {
-            author
-            path
+            image
             slug
             title
-            spice
           }
-          html
         }
       }
     }

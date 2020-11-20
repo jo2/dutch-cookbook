@@ -24,8 +24,17 @@ module.exports = {
         path: `${__dirname}/_data/recipes`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `spices`,
+        path: `${__dirname}/_data/spices`,
+      },
+    },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`
-  ]
+  ],
+  mapping: {
+    "MarkdownRemark.frontmatter.spice": "MarkdownRemark.frontmatter.spice_title"
+  }
 }
